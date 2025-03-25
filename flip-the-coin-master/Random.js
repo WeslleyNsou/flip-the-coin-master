@@ -1,6 +1,12 @@
 var Random = document.getElementById('Random')
 
 Random.addEventListener('click', function(){
-    const result = math.Random() <= 0.5 ? "Heads" : "Tail";
-    document.getElementById('result').textContent = result;
+    let result = Math.random() < 0.5 ? "Heads" : "Tail"
+    document.getElementById('result-txt').innerHTML = result
+    if(result === "Heads"){
+        
+    }else{
+        console.log('> 0.5')
+    }
+
 })
